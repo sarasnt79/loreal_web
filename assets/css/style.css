@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+background: rgb(0, 0, 0);
+    font-family: 'Semibold';
+   
+
+}
+
+
+:root{
+    --firstColor :rgb(169 ,128 ,100);
+    --gradient:   linear-gradient(to right, rgba(249,220,174,1) 0%, rgba(205,155,76,1) 100%);;
+}
+
+.bg-cream{
+    color: var(--firstColor);
+ 
+}
+
+
+.head{
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-left: 200px;
+    cursor: default;
+}
+.flexBox{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.first{
+    background: url(../images/3140411361.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.box1{
+ position: absolute;
+ top: 150px;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.box1 a{
+text-decoration: none;
+cursor: default;
+}
+
+.text{
+    
+    font-size: 8rem;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 11.5rem;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.logoimg{
+    width: 100px;
+}
+
+.hello::after{
+    content: "The";
+    color: var(--firstColor);
+}
+.person::after{
+    content: "Essentiality";
+    color: antiquewhite;
+}
+.sara::after{
+    content: "of Beauty";
+    color: antiquewhite;
+}
+
+.on-hover-40{
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+
+	margin-left: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.hello:hover::after{
+    content:"About";
+    color: var(--firstColor);
+    cursor: pointer;
+}
+
+.person:hover::after{
+    content:"cosmetics";
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.sara:hover::after{
+    content:"Contact";
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.down{
+    color:antiquewhite ;
+    position: absolute;
+    font-size: 3rem;
+    left: 800px;
+     top: 900px;
+     cursor: pointer;
+     border-radius: 50%;
+     transition: all .4s ease;	
+}
+
+.down:hover {
+    color:var(--firstColor) ;
+    font-size: 3.5rem;
+
+}
+
+
+/* about page */
+.firstpart{
+    height: 100vh;
+}
+.firstpart .img_box{
+    position: absolute;
+    top: 300px;
+    left: 850px;
+}
+
+.img_box img{
+    opacity: 0.8;
+}
+
+.text-box{
+  
+    margin-top: 150px;
+
+    display: inline-block;
+
+}
+.firstpart .text-box h2{
+    margin-left: 130px;
+}
+
+.text-box h2{
+    color: rgb(216, 188, 152);
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+    font-weight: 90;
+    text-align: center;
+
+}
+.firstpart .text-box div{
+    margin-left: 160px;
+}
+
+.text-box div{
+    color: rgb(250, 237, 220);
+    margin-top: 40px;
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+    font-weight: 50;    
+    width: 500px;
+
+}
+
+.seondpart {
+ position: relative;
+}
+
+.seondpart .img_box{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+}
+
+.seondpart .img_box img{
+    width: 500px;
+}
+
+.seondpart .text-box h2{
+    margin-left: 1100px;
+    margin-top: 60px;
+}
+
+.seondpart .text-box div{
+    margin-left: 1100px;
+
+}
+
+.imags{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imags img{
+    width: 610px;
+    opacity: .8;
+}
+
+
+.thirdpart{
+    height: 100vh;
+    position: relative;
+}
+
+.thirdpart .img_box{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+
+}
+
+.thirdpart .img_box img{
+    width: 500px;
+}
+
+.thirdpart .text-box h2{
+    margin-left: 1100px;
+    margin-top: 180px;
+}
+
+.thirdpart .abt{
+    color: rgb(250, 237, 220);
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+    font-weight: 50;    
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 350px;
+     width: 1300px;
+}
+
+.fourpart{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourpart .text-box h2{
+ margin-top: 30px;
+}
+
+.fourpart .imags{
+    margin-top: 50px;
+}
+
+.fourpart .abt{
+    color: rgb(250, 237, 220);
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+    font-weight: 50;    
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 50px;
+     width: 1300px;
+     text-align: center;
+}
+
+.downPart{
+    position: fixed;
+    right: 50px;
+    top: 850px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .3s ease;
+    
+}
+
+.downPart i{
+    font-size: 50px;
+    color:antiquewhite ;
+}
+
+.downPart i:hover{
+
+    color:var(--firstColor) ;
+    font-size: 3.5rem;
+}
+.upPart{
+    position: fixed;
+    left: 50px;
+    top: 850px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .3s ease;
+    
+}
+
+.upPart i{
+    font-size: 50px;
+    color:antiquewhite ;
+}
+
+.upPart i:hover{
+
+    color:var(--firstColor) ;
+    font-size: 3.5rem;
+}
+
+.fivepart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fivepart .img_box img{
+    width: 100%;
+
+}
+
+.fivepart .text-box h2{
+
+   margin: 50px auto; 
+}
+
+.fivepart .abt{
+    color: rgb(250, 237, 220);
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+    font-weight: 50;    
+    width: 1700px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+     width: 1300px;
+     text-align: center;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+/* cosmetics page */
+
+.cosmetics{
+    background: url(../images/mGy3nT.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;  
+   height: 100vh;
+ 
+}
+.box1{
+    margin-top: 80px;
+}
+
+.cosmetics a div{
+   
+    font-size: 2rem;
+    line-height: 7.3rem;
+}
+
+
+.makeup::after{
+    content: "makeup";
+    color: var(--firstColor);
+    cursor: pointer;
+   
+}
+.hairColor::after{
+    content: "Skin care";
+    color: antiquewhite;
+    cursor: pointer;
+
+}
+.menExpert::after{
+    content: "men expert";
+    color: antiquewhite;
+    cursor: pointer;
+
+}
+
+.on-hover-40{
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+
+	margin-left: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+
+
+/* makeup */
+
+.allmakeup{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav{
+display: flex;
+justify-content: center;
+width: 100%;
+height: 200px;
+background-color: black;
+}
+
+.Products{
+    width: 1700px;
+    height: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Product{
+    background-color: whitesmoke;
+width: 500px;
+height: 500px;
+border-radius: 15px;
+border: 1.5px solid  gray;
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: all .3s ease;
+}
+.Product:hover{
+    border: 1.5px solid  rgb(247, 216, 168);
+    /* box-shadow: -1px -1px 80px 9px rgb(240, 216, 182); */
+}
+
+.on-hover-40y{
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.on-hover-40y:hover {
+
+	margin-bottom: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+
+
+
+.lips img{
+    width: 250px;
+    margin-top: 20px;
+}
+
+.cream img{
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.blush img{
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.lips div{
+    margin-top: 90px;
+    font-size: 1.5rem;
+}
+
+.cream div{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.blush div{
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+
+/* skin care */
+
+.Revitalift img{
+    width: 250px;
+    margin-top: 20px;
+}
+
+.Bright img{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.Midnight img{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.Revitalift div{
+    margin-top: 90px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.Bright div{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.Midnight div{
+    margin-top: 80px;
+    font-size: 1.5rem;
+    margin-left: 50px;
+
+    text-align: center;
+}
+
+
+/* men Expert */
+
+.hydra img{
+    width: 70px;
+    margin-top: 20px;
+}
+
+.cleanser img{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.vita img{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.hydra div{
+    margin-top: 90px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cleanser div{
+    margin-top: 100px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.vita div{
+    margin-top: 80px;
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+
+
+/* contact */
+
+label{
+    color: white;
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+input{
+    background-color:black;
+    border: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    line-height: 1.6rem;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1.4rem;
+}
+
+form{
+    margin: 90px 0;
+    margin-left: 400px;
+}
+textarea{
+ height: 20px;
+ background-color:black;
+ color: white;
+ border: none;
+ border: 1px solid white;
+}
+
+.sub{
+    background-color: antiquewhite;
+    padding: 10px 30px;
+      font-size: 1.3rem;
+      text-decoration: none ;
+     margin-top: 10px;
+      display: inline-block;
+      color: var(--firstColor);
+      font-weight: bold;
+      border-radius: 3px;
+      transition: all .3s ease;
+      margin-left: 450px;
+      margin-top: 70px;
+}
+
+.sub:hover{
+    background-color: var(--firstColor);
+    color: antiquewhite;
+}
+
+.space{
+ border: none;
+ border: 1px solid rgba(255, 255, 255, 0.438) ;
+
+}
+
+.social{
+    color:antiquewhite ;
+    margin: 30px;
+    font-size: 1.4rem;
+}
+
+.social a{
+    text-decoration: none;
+    color:antiquewhite ;
+    margin-right: 400px;
+    margin-left: 50px;
+}
+
+
+.social a:hover{
+    
+    color:var(--firstColor) ;
+}
